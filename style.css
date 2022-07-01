@@ -1,0 +1,121 @@
+* {
+  margin: 0 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+#size {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  color: red;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  font-size: 2.5vw;
+  gap: 20px;
+}
+
+.header__logo {
+  font-size: 4vw;
+}
+
+.main {
+  height: 80%;
+  display: flex;
+}
+
+.footer {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 18%;
+}
+.footer [class^=footer__] img {
+  width: 5vw;
+}
+
+.main__image {
+  background-image: url("/images/Portrait.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 50%;
+}
+
+.main__text {
+  width: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.main__text-1 {
+  font-size: 10vw;
+}
+
+.main__text-2,
+.main__text-3,
+.main__text-4 {
+  font-size: 5vw;
+}
+
+@media (max-width: 650px) {
+  .header {
+    justify-content: center;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__logo {
+    font-size: 60px;
+  }
+
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: 100%;
+    background-position: center;
+  }
+  .main__text {
+    width: 100%;
+  }
+  .main__text-1 {
+    display: none;
+  }
+  .main__text-2, .main__text-3, .main__text-4 {
+    font-size: 50px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+  .footer [class^=footer__] img {
+    width: 45px;
+    height: 45px;
+  }
+}/*# sourceMappingURL=style.css.map */
