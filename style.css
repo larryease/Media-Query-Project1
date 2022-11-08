@@ -78,15 +78,21 @@
   font-size: 5vw;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
   .header {
     justify-content: center;
   }
+
   .header__menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:center
+      align-items: center;
+    font-size: 30px;
   }
+
   .header__logo {
-    font-size: 60px;
+    display: none;
   }
 
   .main {
@@ -94,6 +100,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .main__image {
     width: 200px;
     height: 200px;
@@ -101,21 +108,27 @@
     background-size: 100%;
     background-position: center;
   }
+
   .main__text {
     width: 100%;
   }
+
   .main__text-1 {
     display: none;
   }
-  .main__text-2, .main__text-3, .main__text-4 {
+
+  .main__text-2,
+  .main__text-3,
+  .main__text-4 {
     font-size: 50px;
   }
 
   .footer {
     justify-content: center;
   }
+
   .footer [class^=footer__] img {
     width: 45px;
     height: 45px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
